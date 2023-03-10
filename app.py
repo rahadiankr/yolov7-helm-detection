@@ -39,7 +39,7 @@ def imageInput(device, src):
                 f.write(image_file.getbuffer())
 
             #call Model prediction--
-            model = torch.hub.load('ultralytics/yolov5', 'custom', path='models/yolov7.pt', force_reload=True) 
+            model = torch.hub.load('ultralytics/yolov7', 'custom', path='models/yolov7.pt', force_reload=True) 
             model.cuda() if device == 'cuda' else model.cpu()
             pred = model(imgpath)
             pred.render()  # render bbox in image
