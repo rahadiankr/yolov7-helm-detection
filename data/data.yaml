@@ -1,0 +1,13 @@
+names:
+- no-helmet
+- helmet
+nc: 2
+roboflow:
+  license: CC BY 4.0
+  project: hard-hat-safety
+  url: https://universe.roboflow.com/hard-hat-aimb5/hard-hat-safety/dataset/1
+  version: 1
+  workspace: hard-hat-aimb5
+test: ../test/images
+train: Hard-hat-safety-1/train/images
+val: Hard-hat-safety-1/valid/images
